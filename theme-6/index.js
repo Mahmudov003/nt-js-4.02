@@ -17,7 +17,7 @@ let voterd = [
 ];
 
 function voterResults(arr) {
-    const array = arr.reduce((acc, cv) => {
+     return  arr.reduce((acc, cv) => {
     if (cv.age >=18 && cv.age<=25) {
         acc.numYoungPeople++
         if (cv.voted) {
@@ -42,7 +42,6 @@ function voterResults(arr) {
         numOldVotesPeople: 0,
         numOldsPeople: 0
     });
-    return array
 }
 
 console.log(voterResults(voterd)); // Returned value shown below:
